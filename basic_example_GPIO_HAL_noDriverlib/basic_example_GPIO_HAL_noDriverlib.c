@@ -3,6 +3,7 @@
 // the LED is on. As soon as you release the button, LED is off and stays off until the button is pressed again.
 // This example use memory-mapped registers to communicate with GPIO peripherals.
 // This example doesn't use any Driverlib function. However, it does build a Hardware Abstraction Layer (HAL).
+// The main function is easy to read, but the HAL functions themselves are hard to write since we do not use Driverlib.
 
 
 // According to the schematics on page 37 of the Launchpad user guide,

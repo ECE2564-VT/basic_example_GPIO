@@ -2,6 +2,7 @@
 // The operation is such that if you press the left button, as long as you keep the button pressed,
 // the LED is on. As soon as you release the button, LED is off and stays off until the button is pressed again.
 // This example uses Driverlib functions. It also builds a HAL.
+// It is easy to read (due to HAL) and easy to write(due to Driverlib)!!
 
 #include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 
