@@ -88,18 +88,15 @@ void initialize()
 
 void TurnOn_Launchpad_LED1()
 {
-    //GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);
     *P1OUT_pointer = *P1OUT_pointer |  LEFT_LED;
 }
 
 void TurnOff_Launchpad_LED1()
 {
-    //GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
     *P1OUT_pointer = *P1OUT_pointer & ~LEFT_LED;
 }
 
 char S1isPressed()
 {
-    //return (GPIO_getInputPinValue(GPIO_PORT_P1, GPIO_PIN1));
     return ((*P1IN_pointer & LEFT_BUTTON) == PRESSED);
 }
