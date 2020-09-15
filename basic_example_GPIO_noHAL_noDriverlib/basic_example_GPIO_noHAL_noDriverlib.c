@@ -17,18 +17,16 @@
 // When a button is pressed, it is grounded (logic 0)
 #define PRESSED 0
 
-// global variables are not recommended.
-// However, without a Driver library, using global variables is a reasonable solution.
- unsigned char *P1IN_address;
- unsigned char *P1OUT_address;
- unsigned char *P1REN_address;
- unsigned char *P1DIR_address;
-
 
  // This example does not use a HAL and therefore, it is hard to read, and hard to port to other platforms.
  // It does not use Driverlib functions, so it is very hard to write as well!
 int main(void)
 {
+
+    unsigned char *P1IN_address;
+    unsigned char *P1OUT_address;
+    unsigned char *P1REN_address;
+    unsigned char *P1DIR_address;
 
     P1IN_address = (unsigned char *)0x40004C00;
     P1OUT_address = (unsigned char *)0x40004C02;
